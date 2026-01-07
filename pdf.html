@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DNE Kauan</title>
+  <style>
+    @media print {
+      @page { margin: 0; size: 420px 600px; }
+      body { -webkit-print-color-adjust: exact; }
+    }
+    body {
+      margin: 0;
+      padding: 20px;
+      background: #f8f9fa;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .card {
+      width: 100%;
+      max-width: 420px;
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+    .header {
+      background: #1e3a8a;
+      color: white;
+      padding: 24px 20px;
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    .content {
+      padding: 24px 20px;
+    }
+    .photo-qr {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+    .photo, .qr {
+      flex: 1;
+      text-align: center;
+    }
+    .photo img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 1px solid #e2e8f0;
+    }
+    .qr-code {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 12px;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+    }
+    .qr-code img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .qr-label {
+      font-size: 12px;
+      color: #64748b;
+      margin-bottom: 4px;
+    }
+    .qr-value {
+      font-size: 14px;
+      font-weight: 700;
+      color: #333;
+    }
+    .data {
+      margin-bottom: 20px;
+    }
+    .name {
+      font-size: 18px;
+      font-weight: 800;
+      color: #1e293b;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    .row {
+      display: flex;
+      font-size: 13px;
+      color: #64748b;
+      margin-bottom: 8px;
+    }
+    .row-label {
+      width: 120px;
+    }
+    .row-value {
+      flex: 1;
+      color: #1e293b;
+      font-weight: 600;
+    }
+    .footer {
+      text-align: center;
+      font-size: 11px;
+      color: #94a3b8;
+      padding-top: 16px;
+      border-top: 1px solid #f1f5f9;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <h1>Documento Nacional do Estudante</h1>
+    </div>
+    <div class="content">
+      <div class="photo-qr">
+        <div class="photo">
+          <!-- ✅ SUA FOTO REAL -->
+          <img src="https://i.postimg.cc/9MFbgZqc/foto-jpg.png" alt="Foto">
+        </div>
+        <div class="qr">
+          <div class="qr-code">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https%3A%2F%2Fsl1nk.com%2Fmeiaentradaorgbrvalidar" alt="QR Code">
+          </div>
+          <div class="qr-label">Nº da CIE</div>
+          <div class="qr-value">202510176854</div>
+          <div class="qr-label">Cód. de uso</div>
+          <div class="qr-value">789XYZ</div>
+        </div>
+      </div>
+
+      <div class="data">
+        <div class="name">Kauan Nunes dos Santos</div>
+        <div class="row">
+          <div class="row-label">Instituição</div>
+          <div class="row-value">Universidade Estácio de Sá – Campus Palhoça</div>
+        </div>
+        <div class="row">
+          <div class="row-label">Curso</div>
+          <div class="row-value">Análise e Desenvolvimento de Sistemas</div>
+        </div>
+        <div class="row">
+          <div class="row-label">Nível</div>
+          <div class="row-value">SUPERIOR</div>
+        </div>
+        <div class="row">
+          <div class="row-label">Nascimento</div>
+          <div class="row-value">27/08/2003</div>
+        </div>
+        <div class="row">
+          <div class="row-label">CPF</div>
+          <div class="row-value">106.360.660-16</div>
+        </div>
+        <div class="row">
+          <div class="row-label">Bilhete Único</div>
+          <div class="row-value">087345921</div>
+        </div>
+      </div>
+
+      <div class="footer">
+        Válido até 31/03/2028 • Sistema integrado UNE/ANPG
+      </div>
+    </div>
+  </div>
+</body>
+</html>
